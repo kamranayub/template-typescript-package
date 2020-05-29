@@ -35,7 +35,6 @@
     "hooks": {
       "pre-commit": "yarn lint --fix && npm test",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-push": "yarn lint && npm test"
     }
   },
   "devDependencies": {
