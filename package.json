@@ -34,7 +34,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "yarn lint --fix && npm test",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "devDependencies": {
