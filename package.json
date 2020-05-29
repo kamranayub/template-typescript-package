@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "lint": "eslint './src/**/*.{js,ts,tsx}'",
+    "lint": "eslint \"./src/**/*.{js,ts,tsx}\"",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "build": "tsc",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/beeman/template-typescript-package.git"
+    "url": "https://github.com/kamranayub/template-typescript-package.git"
   },
   "keywords": [
     "TypeScript",
@@ -23,17 +23,17 @@
     "Starter"
   ],
   "author": {
-    "name": "Bram Borggreve",
-    "email": "borggreve@gmail.com"
+    "name": "Kamran Ayub",
+    "email": "kamran.ayub@gmail.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/beeman/template-typescript-package/issues"
+    "url": "https://github.com/kamranayub/template-typescript-package/issues"
   },
-  "homepage": "https://github.com/beeman/template-typescript-package#readme",
+  "homepage": "https://github.com/kamranayub/template-typescript-package#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint && npm test",
+      "pre-commit": "yarn lint --fix && npm test",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-push": "yarn lint && npm test"
     }
